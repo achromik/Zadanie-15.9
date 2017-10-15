@@ -1,4 +1,4 @@
-const _TOKEN_ = 'ec6b7aa56a01b04611b7c6ea9e38105ba5313723';
+const _TOKEN_ = '0392cb959bdb6b6cb5fc567b12f80373b9b64e44';
 
 class App extends React.Component {
     constructor() {
@@ -39,7 +39,7 @@ class App extends React.Component {
                     <form  onSubmit={event => this.onSubmit(event)}>
                         <div className={'field'}>
                             <label className={'label'} htmlFor="searchText">Search GitHub users by user name</label>
-                            <p className={'control has-icons-left'}>
+                            <div className={'control has-icons-left'}>
                                 <input className={'input'}
                                     type='text'
                                     id='searchText'
@@ -51,7 +51,7 @@ class App extends React.Component {
                                 <p className={'help has-text-white'}>
                                     {this.matchesCount()} 
                                 </p>
-                            </p>
+                            </div>
                         </div>
                     </form>
                 </div>    

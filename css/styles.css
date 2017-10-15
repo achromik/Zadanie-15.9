@@ -1,6 +1,7 @@
 html {
     background-color: #DCE35B;
 }
+
 body {
     background: #DCE35B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
