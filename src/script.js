@@ -1,4 +1,4 @@
-const _TOKEN_ = '0392cb959bdb6b6cb5fc567b12f80373b9b64e44';
+const _TOKEN_ = 'd7241decf553a1bf119'+'8c559b9013dde2b829f55';
 
 class App extends React.Component {
     constructor() {
