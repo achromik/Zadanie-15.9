@@ -100,18 +100,44 @@ class User extends React.Component {
                 <article className={'media'}>
                     <div className={'media-left'}>
                         <img src={this.props.user.avatar_url} style={{maxWidth: '100px'}} />
+                        <p className={'is-size-7 has-text-centered'}>
+                            Followers: <strong>{this.state.details.followers}</strong>
+                        </p>
                     </div>
                     <div className={'media-content'}>
                         <div className={'content'}>
-                            <p>
-                                <strong>Username: </strong> <a href={this.props.user.html_url} target='_blank'>{this.props.user.login}</a>
+                            <div className={'columns is-multiline'}>
+                                <div className="column is-3 has-text-right has-text-weight-bold">
+                                    Login:
+                                </div>
+                                <div className="column is-9">
+                                    <a href={this.props.user.html_url} target='_blank'>{this.props.user.login}</a>
+                                </div>
+                                <div className="column is-3 has-text-right has-text-weight-bold">
+                                    Name:
+                                </div>
+                                <div className="column is-9">
+                                    {this.state.details.name}
+                                </div>
+                                <div className="column is-3 has-text-right has-text-weight-bold">
+                                    Location:
+                                </div>
+                                <div className="column is-9">
+                                    {this.state.details.location}
+                                </div>
+
+                            </div>
+                            
+                            
+                            {/* <p>
+                                <strong>Login: </strong> <a href={this.props.user.html_url} target='_blank'>{this.props.user.login}</a>
                             </p>
                             <p>
                                 <strong>Name: </strong> {this.state.details.name}
                             </p>    
                             <p>
                                 <strong>Location: </strong> {this.state.details.location}
-                            </p>    
+                            </p>     */}
                         </div>
                     </div>
                 </article>
